@@ -29,5 +29,10 @@ namespace CRUD_Proyecto
             else if (tipoUsuario == 3)
                 lb_Tipo.Text = "Recepcionista";
         }
+
+        private void lb_Tipo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
