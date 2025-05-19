@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lb_Tipo = new System.Windows.Forms.Label();
+            this.btnEntrarAdministracion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb_Tipo
@@ -40,11 +41,23 @@
             this.lb_Tipo.TabIndex = 0;
             this.lb_Tipo.Text = "label1";
             // 
+            // btnEntrarAdministracion
+            // 
+            this.btnEntrarAdministracion.Location = new System.Drawing.Point(572, 42);
+            this.btnEntrarAdministracion.Name = "btnEntrarAdministracion";
+            this.btnEntrarAdministracion.Size = new System.Drawing.Size(75, 23);
+            this.btnEntrarAdministracion.TabIndex = 1;
+            this.btnEntrarAdministracion.Text = "Administrar";
+            this.btnEntrarAdministracion.UseVisualStyleBackColor = true;
+            this.btnEntrarAdministracion.Visible = false;
+            this.btnEntrarAdministracion.Click += new System.EventHandler(this.EntrarAdministracion_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEntrarAdministracion);
             this.Controls.Add(this.lb_Tipo);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
@@ -57,5 +70,6 @@
         #endregion
 
         private System.Windows.Forms.Label lb_Tipo;
+        private System.Windows.Forms.Button btnEntrarAdministracion;
     }
 }
