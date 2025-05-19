@@ -2,6 +2,60 @@
 # Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
 ################################################################################
 
+
+
 /.vs
 /CRUD_Proyecto/.vs/CRUD_Proyecto
 /CRUD_Proyecto/obj/Debug
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build resultados
+bin/
+obj/
+Debug/
+Release/
+
+# Paquetes NuGet
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+
+# Archivos temporales
+*.tmp
+*.log
+*.cache
+
+# Configuraciones locales (pueden contener datos sensibles)
+appsettings.Development.json
+appsettings.Local.json
+
+# Archivos de base de datos locales
+*.mdf
+*.ldf
+
+# Archivos de base de datos MySQL (opcional)
+*.sql
+
+# Configuraciones Rider o JetBrains
+.idea/
+
+# Otros archivos generados
+*.vspscc
+*.vssscc
+*.dbmdl
+*.bak
+
+# Configuración de despliegue
+publish/
+
+# Node.js (si usas frontend)
+node_modules/
+
+# MacOS
+.DS_Store
