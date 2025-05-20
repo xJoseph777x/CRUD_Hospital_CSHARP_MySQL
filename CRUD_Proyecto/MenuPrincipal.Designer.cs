@@ -35,11 +35,13 @@
             // lb_Tipo
             // 
             this.lb_Tipo.AutoSize = true;
-            this.lb_Tipo.Location = new System.Drawing.Point(78, 42);
+            this.lb_Tipo.Location = new System.Drawing.Point(104, 52);
+            this.lb_Tipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_Tipo.Name = "lb_Tipo";
-            this.lb_Tipo.Size = new System.Drawing.Size(35, 13);
+            this.lb_Tipo.Size = new System.Drawing.Size(44, 16);
             this.lb_Tipo.TabIndex = 0;
             this.lb_Tipo.Text = "label1";
+            this.lb_Tipo.Click += new System.EventHandler(this.lb_Tipo_Click);
             // 
             // btnEntrarAdministracion
             // 
@@ -54,11 +56,12 @@
             // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnEntrarAdministracion);
             this.Controls.Add(this.lb_Tipo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);

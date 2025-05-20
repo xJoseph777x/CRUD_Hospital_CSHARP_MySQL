@@ -39,5 +39,10 @@ namespace CRUD_Proyecto
         {
 
         }
+
+        private void lb_Tipo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
