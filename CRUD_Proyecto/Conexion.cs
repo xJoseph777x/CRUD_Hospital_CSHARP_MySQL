@@ -7,17 +7,23 @@ using MySql.Data.MySqlClient;
 
 namespace CRUD_Proyecto
 {
+
+    /// <summary>
+    /// 
+    /// </summary>
     internal class Conexion
     {
         protected MySqlConnection connection;
-//caDena conexion
+        //caDena conexion
         private string connectionString = "server=localhost;user=root;password=password;database=mydb;";
 
         public Conexion()
         {
             connection = new MySqlConnection(connectionString);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         protected void AbrirConexion()
         {
             if (connection.State != System.Data.ConnectionState.Open)
