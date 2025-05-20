@@ -10,7 +10,7 @@ namespace CRUD_Proyecto
     internal class Conexion
     {
         protected MySqlConnection connection;
-
+//caDena conexion
         private string connectionString = "server=localhost;user=root;password=password;database=mydb;";
 
         public Conexion()
