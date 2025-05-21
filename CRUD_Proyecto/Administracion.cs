@@ -50,5 +50,10 @@ namespace CRUD_Proyecto
 
 
         }
+
+        private void dgv_articulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
