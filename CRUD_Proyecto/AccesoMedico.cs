@@ -21,10 +21,13 @@ namespace CRUD_Proyecto
         {
 
         }
+<<<<<<< HEAD
 
         private void btn_Nuevo_Click(object sender, EventArgs e)
         {
 
         }
+=======
+>>>>>>> 46a73efe037d82a1ac1865de98142764c2680a44
     }
 }

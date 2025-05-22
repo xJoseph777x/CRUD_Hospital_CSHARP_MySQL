@@ -15,7 +15,7 @@ namespace CRUD_Proyecto
     {
         protected MySqlConnection connection;
         //caDena conexion
-        private string connectionString = "server=localhost;user=root;password=password;database=mydb;";
+        private string connectionString = "server=localhost;user=equipo;password=hola123;database=mydb;";
 
         public Conexion()
         {

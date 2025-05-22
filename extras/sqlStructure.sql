@@ -88,9 +88,7 @@ DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE `usuarios` (
   `idUsuario` int NOT NULL AUTO_INCREMENT,
   `NomUsuario` varchar(45) NOT NULL,
-  `CURPUsuario` varchar(45) NOT NULL,
   `tipo` int NOT NULL,
-  `sexo` int NOT NULL,
   `clave` varchar(15) NOT NULL,
   PRIMARY KEY (`idUsuario`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;

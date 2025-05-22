@@ -312,7 +312,10 @@
             this.btn_Nuevo.Text = "Nuevo";
             this.btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Nuevo.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             this.btn_Nuevo.Click += new System.EventHandler(this.btn_Nuevo_Click);
+=======
+>>>>>>> 46a73efe037d82a1ac1865de98142764c2680a44
             // 
             // btn_guardar
             // 
