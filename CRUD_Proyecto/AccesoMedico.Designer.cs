@@ -28,14 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.TxtRepetirPassword = new System.Windows.Forms.TextBox();
-            this.labelRepetirPassword = new System.Windows.Forms.Label();
-            this.password = new System.Windows.Forms.TextBox();
-            this.lbPassword = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioRecepcionista = new System.Windows.Forms.RadioButton();
-            this.radioMedico = new System.Windows.Forms.RadioButton();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioMasculino = new System.Windows.Forms.RadioButton();
             this.radioFemenino = new System.Windows.Forms.RadioButton();
@@ -45,112 +38,28 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.Txt_Buscar = new System.Windows.Forms.TextBox();
             this.BtnSalir = new System.Windows.Forms.Button();
-            this.Btn_Reporte = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.btn_Nuevo = new System.Windows.Forms.Button();
-            this.btn_guardar = new System.Windows.Forms.Button();
-            this.btn_cancelar = new System.Windows.Forms.Button();
-            this.TxtTelefono = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.BtnAcutalizar = new System.Windows.Forms.Button();
-            this.TxtCurp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dgvPacientes = new System.Windows.Forms.DataGridView();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.dgv_articulos = new System.Windows.Forms.DataGridView();
-            this.groupBox2.SuspendLayout();
+            this.TxtCurp = new System.Windows.Forms.TextBox();
+            this.TxtTelefono = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtDireccion = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_articulos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).BeginInit();
             this.SuspendLayout();
-            // 
-            // TxtRepetirPassword
-            // 
-            this.TxtRepetirPassword.Enabled = false;
-            this.TxtRepetirPassword.Location = new System.Drawing.Point(200, 561);
-            this.TxtRepetirPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtRepetirPassword.Name = "TxtRepetirPassword";
-            this.TxtRepetirPassword.ReadOnly = true;
-            this.TxtRepetirPassword.ShortcutsEnabled = false;
-            this.TxtRepetirPassword.Size = new System.Drawing.Size(193, 22);
-            this.TxtRepetirPassword.TabIndex = 85;
-            this.TxtRepetirPassword.UseSystemPasswordChar = true;
-            this.TxtRepetirPassword.Visible = false;
-            // 
-            // labelRepetirPassword
-            // 
-            this.labelRepetirPassword.AutoSize = true;
-            this.labelRepetirPassword.Location = new System.Drawing.Point(66, 564);
-            this.labelRepetirPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelRepetirPassword.Name = "labelRepetirPassword";
-            this.labelRepetirPassword.Size = new System.Drawing.Size(117, 16);
-            this.labelRepetirPassword.TabIndex = 84;
-            this.labelRepetirPassword.Text = "Repetir Password:";
-            this.labelRepetirPassword.Visible = false;
-            // 
-            // password
-            // 
-            this.password.Enabled = false;
-            this.password.Location = new System.Drawing.Point(200, 515);
-            this.password.Margin = new System.Windows.Forms.Padding(4);
-            this.password.Name = "password";
-            this.password.ReadOnly = true;
-            this.password.Size = new System.Drawing.Size(193, 22);
-            this.password.TabIndex = 83;
-            this.password.UseSystemPasswordChar = true;
-            // 
-            // lbPassword
-            // 
-            this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(121, 519);
-            this.lbPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(70, 16);
-            this.lbPassword.TabIndex = 82;
-            this.lbPassword.Text = "Password:";
-            this.lbPassword.Visible = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.radioRecepcionista);
-            this.groupBox2.Controls.Add(this.radioMedico);
-            this.groupBox2.Location = new System.Drawing.Point(200, 449);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(267, 50);
-            this.groupBox2.TabIndex = 81;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // radioRecepcionista
-            // 
-            this.radioRecepcionista.AutoSize = true;
-            this.radioRecepcionista.Location = new System.Drawing.Point(129, 23);
-            this.radioRecepcionista.Margin = new System.Windows.Forms.Padding(4);
-            this.radioRecepcionista.Name = "radioRecepcionista";
-            this.radioRecepcionista.Size = new System.Drawing.Size(115, 20);
-            this.radioRecepcionista.TabIndex = 1;
-            this.radioRecepcionista.TabStop = true;
-            this.radioRecepcionista.Text = "Recepcionista";
-            this.radioRecepcionista.UseVisualStyleBackColor = true;
-            // 
-            // radioMedico
-            // 
-            this.radioMedico.AutoSize = true;
-            this.radioMedico.Location = new System.Drawing.Point(8, 22);
-            this.radioMedico.Margin = new System.Windows.Forms.Padding(4);
-            this.radioMedico.Name = "radioMedico";
-            this.radioMedico.Size = new System.Drawing.Size(73, 20);
-            this.radioMedico.TabIndex = 0;
-            this.radioMedico.TabStop = true;
-            this.radioMedico.Text = "Medico";
-            this.radioMedico.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radioMasculino);
             this.groupBox1.Controls.Add(this.radioFemenino);
-            this.groupBox1.Location = new System.Drawing.Point(200, 302);
+            this.groupBox1.Location = new System.Drawing.Point(180, 501);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -187,7 +96,7 @@
             // 
             this.dtpFechaNacimiento.CustomFormat = "dd/MM/yyyy";
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(200, 265);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(180, 342);
             this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(291, 22);
@@ -196,7 +105,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(138, 232);
+            this.label7.Location = new System.Drawing.Point(118, 309);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 16);
@@ -206,7 +115,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(66, 186);
+            this.label8.Location = new System.Drawing.Point(46, 263);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 16);
@@ -248,22 +157,7 @@
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnSalir.UseVisualStyleBackColor = false;
-            // 
-            // Btn_Reporte
-            // 
-            this.Btn_Reporte.BackColor = System.Drawing.Color.PowderBlue;
-            this.Btn_Reporte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Reporte.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Btn_Reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Reporte.ImageKey = "report256_24829.png";
-            this.Btn_Reporte.Location = new System.Drawing.Point(844, 47);
-            this.Btn_Reporte.Margin = new System.Windows.Forms.Padding(4);
-            this.Btn_Reporte.Name = "Btn_Reporte";
-            this.Btn_Reporte.Size = new System.Drawing.Size(152, 114);
-            this.Btn_Reporte.TabIndex = 73;
-            this.Btn_Reporte.Text = "Reporte";
-            this.Btn_Reporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Btn_Reporte.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click_1);
             // 
             // BtnEliminar
             // 
@@ -272,14 +166,15 @@
             this.BtnEliminar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminar.ImageKey = "business_deletethedatabase_exit_db_delete_busines_2346.png";
-            this.BtnEliminar.Location = new System.Drawing.Point(652, 47);
+            this.BtnEliminar.Location = new System.Drawing.Point(830, 47);
             this.BtnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(152, 114);
             this.BtnEliminar.TabIndex = 72;
-            this.BtnEliminar.Text = "eliminar";
+            this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click_1);
             // 
             // BtnActualizar
             // 
@@ -288,7 +183,7 @@
             this.BtnActualizar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnActualizar.ImageKey = "Exit-Page_icon-icons.com_53732.png";
-            this.BtnActualizar.Location = new System.Drawing.Point(452, 47);
+            this.BtnActualizar.Location = new System.Drawing.Point(638, 47);
             this.BtnActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnActualizar.Name = "BtnActualizar";
             this.BtnActualizar.Size = new System.Drawing.Size(152, 114);
@@ -296,6 +191,7 @@
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnActualizar.UseVisualStyleBackColor = false;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click_1);
             // 
             // btn_Nuevo
             // 
@@ -304,7 +200,7 @@
             this.btn_Nuevo.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Nuevo.ImageKey = "nuevo.png";
-            this.btn_Nuevo.Location = new System.Drawing.Point(261, 47);
+            this.btn_Nuevo.Location = new System.Drawing.Point(447, 47);
             this.btn_Nuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Nuevo.Name = "btn_Nuevo";
             this.btn_Nuevo.Size = new System.Drawing.Size(152, 114);
@@ -312,10 +208,10 @@
             this.btn_Nuevo.Text = "Nuevo";
             this.btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Nuevo.UseVisualStyleBackColor = false;
-<<<<<<< HEAD
+
             this.btn_Nuevo.Click += new System.EventHandler(this.btn_Nuevo_Click);
-=======
->>>>>>> 46a73efe037d82a1ac1865de98142764c2680a44
+
+
             // 
             // btn_guardar
             // 
@@ -356,88 +252,125 @@
             this.TxtTelefono.ReadOnly = true;
             this.TxtTelefono.Size = new System.Drawing.Size(193, 22);
             this.TxtTelefono.TabIndex = 67;
+
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(132, 404);
+            this.label4.Location = new System.Drawing.Point(97, 393);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 16);
             this.label4.TabIndex = 66;
             this.label4.Text = "Telefono:";
             // 
-            // BtnAcutalizar
-            // 
-            this.BtnAcutalizar.Enabled = false;
-            this.BtnAcutalizar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BtnAcutalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAcutalizar.Location = new System.Drawing.Point(530, 248);
-            this.BtnAcutalizar.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnAcutalizar.Name = "BtnAcutalizar";
-            this.BtnAcutalizar.Size = new System.Drawing.Size(75, 28);
-            this.BtnAcutalizar.TabIndex = 65;
-            this.BtnAcutalizar.Text = "------";
-            this.BtnAcutalizar.UseVisualStyleBackColor = true;
-            // 
-            // TxtCurp
-            // 
-            this.TxtCurp.Enabled = false;
-            this.TxtCurp.Location = new System.Drawing.Point(200, 226);
-            this.TxtCurp.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtCurp.Name = "TxtCurp";
-            this.TxtCurp.ReadOnly = true;
-            this.TxtCurp.Size = new System.Drawing.Size(291, 22);
-            this.TxtCurp.TabIndex = 64;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 265);
+            this.label2.Location = new System.Drawing.Point(24, 342);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 16);
             this.label2.TabIndex = 63;
             this.label2.Text = "Fecha de Nacimiento:";
             // 
+            // dgvPacientes
+            // 
+            this.dgvPacientes.AllowUserToAddRows = false;
+            this.dgvPacientes.AllowUserToDeleteRows = false;
+            this.dgvPacientes.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvPacientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPacientes.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvPacientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPacientes.Location = new System.Drawing.Point(530, 302);
+            this.dgvPacientes.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvPacientes.Name = "dgvPacientes";
+            this.dgvPacientes.ReadOnly = true;
+            this.dgvPacientes.RowHeadersWidth = 51;
+            this.dgvPacientes.Size = new System.Drawing.Size(629, 353);
+            this.dgvPacientes.TabIndex = 61;
+            this.dgvPacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacientes_CellContentClick);
+            // 
             // TxtNombre
             // 
-            this.TxtNombre.Enabled = false;
-            this.TxtNombre.Location = new System.Drawing.Point(200, 183);
+            this.TxtNombre.Location = new System.Drawing.Point(180, 260);
             this.TxtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.ReadOnly = true;
             this.TxtNombre.Size = new System.Drawing.Size(291, 22);
-            this.TxtNombre.TabIndex = 62;
+            this.TxtNombre.TabIndex = 81;
             // 
-            // dgv_articulos
+            // TxtCurp
             // 
-            this.dgv_articulos.AllowUserToAddRows = false;
-            this.dgv_articulos.AllowUserToDeleteRows = false;
-            this.dgv_articulos.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgv_articulos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_articulos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgv_articulos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dgv_articulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_articulos.Location = new System.Drawing.Point(530, 302);
-            this.dgv_articulos.Margin = new System.Windows.Forms.Padding(4);
-            this.dgv_articulos.Name = "dgv_articulos";
-            this.dgv_articulos.ReadOnly = true;
-            this.dgv_articulos.RowHeadersWidth = 51;
-            this.dgv_articulos.Size = new System.Drawing.Size(629, 353);
-            this.dgv_articulos.TabIndex = 61;
+            this.TxtCurp.Location = new System.Drawing.Point(180, 303);
+            this.TxtCurp.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtCurp.Name = "TxtCurp";
+            this.TxtCurp.Size = new System.Drawing.Size(291, 22);
+            this.TxtCurp.TabIndex = 82;
+            this.TxtCurp.TextChanged += new System.EventHandler(this.textBox1_TextChanged_3);
+            // 
+            // TxtTelefono
+            // 
+            this.TxtTelefono.Location = new System.Drawing.Point(180, 390);
+            this.TxtTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.Size = new System.Drawing.Size(291, 22);
+            this.TxtTelefono.TabIndex = 83;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(102, 446);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 16);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "Dirección:";
+            this.label1.Click += new System.EventHandler(this.label1_Click_2);
+            // 
+            // TxtDireccion
+            // 
+            this.TxtDireccion.Location = new System.Drawing.Point(180, 440);
+            this.TxtDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtDireccion.Name = "TxtDireccion";
+            this.TxtDireccion.Size = new System.Drawing.Size(291, 22);
+            this.TxtDireccion.TabIndex = 85;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(34, 83);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(339, 32);
+            this.label3.TabIndex = 86;
+            this.label3.Text = "BIENVENIDO  DOCTOR";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(220, 208);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(211, 20);
+            this.label5.TabIndex = 87;
+            this.label5.Text = "DATOS DEL PACIENTE";
             // 
             // AccesoMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1213, 703);
-            this.Controls.Add(this.TxtRepetirPassword);
-            this.Controls.Add(this.labelRepetirPassword);
-            this.Controls.Add(this.password);
-            this.Controls.Add(this.lbPassword);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.TxtDireccion);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TxtTelefono);
+            this.Controls.Add(this.TxtCurp);
+            this.Controls.Add(this.TxtNombre);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dtpFechaNacimiento);
             this.Controls.Add(this.label7);
@@ -445,41 +378,24 @@
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.Txt_Buscar);
             this.Controls.Add(this.BtnSalir);
-            this.Controls.Add(this.Btn_Reporte);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnActualizar);
             this.Controls.Add(this.btn_Nuevo);
-            this.Controls.Add(this.btn_guardar);
-            this.Controls.Add(this.btn_cancelar);
-            this.Controls.Add(this.TxtTelefono);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.BtnAcutalizar);
-            this.Controls.Add(this.TxtCurp);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.TxtNombre);
-            this.Controls.Add(this.dgv_articulos);
+            this.Controls.Add(this.dgvPacientes);
             this.Name = "AccesoMedico";
             this.Text = "AccesoMedico";
             this.Load += new System.EventHandler(this.AccesoMedico_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_articulos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox TxtRepetirPassword;
-        private System.Windows.Forms.Label labelRepetirPassword;
-        private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.Label lbPassword;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioRecepcionista;
-        private System.Windows.Forms.RadioButton radioMedico;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioMasculino;
         private System.Windows.Forms.RadioButton radioFemenino;
@@ -489,18 +405,18 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox Txt_Buscar;
         private System.Windows.Forms.Button BtnSalir;
-        private System.Windows.Forms.Button Btn_Reporte;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.Button btn_Nuevo;
-        private System.Windows.Forms.Button btn_guardar;
-        private System.Windows.Forms.Button btn_cancelar;
-        private System.Windows.Forms.TextBox TxtTelefono;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button BtnAcutalizar;
-        private System.Windows.Forms.TextBox TxtCurp;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dgvPacientes;
         private System.Windows.Forms.TextBox TxtNombre;
-        private System.Windows.Forms.DataGridView dgv_articulos;
+        private System.Windows.Forms.TextBox TxtCurp;
+        private System.Windows.Forms.TextBox TxtTelefono;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TxtDireccion;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }
