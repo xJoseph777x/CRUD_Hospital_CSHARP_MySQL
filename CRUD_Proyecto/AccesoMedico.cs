@@ -397,5 +397,6 @@ namespace CRUD_Proyecto
                 MessageBox.Show("Error al eliminar paciente: " + ex.Message);
             }
         }
+
     }
 }
