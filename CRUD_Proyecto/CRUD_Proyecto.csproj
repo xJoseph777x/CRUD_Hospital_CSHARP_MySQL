@@ -118,6 +118,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistorialMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialMedico.Designer.cs">
+      <DependentUpon>HistorialMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs" />
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialMedico.resx">
+      <DependentUpon>HistorialMedico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
