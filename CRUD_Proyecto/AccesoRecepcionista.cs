@@ -40,29 +40,47 @@ namespace CRUD_Proyecto
         }
         private void FiltrarCitas()
         {
+            DataTable dt = dgv_citas.DataSource as DataTable;
+            if (dt == null) return;
+
             string filtro = txtBuscar.Text.Trim().ToLower();
-            string criterio = cmbFiltro.SelectedItem.ToString();
-
-            if (dgv_citas.DataSource is DataTable dt)
+            if (string.IsNullOrEmpty(filtro))
             {
-                string filtroExpresion = "";
+                dt.DefaultView.RowFilter = "";
+                return;
+            }
 
-                switch (criterio)
-                {
-                    case "Fecha":
-                        filtroExpresion = $"CONVERT(fechaCita, 'System.String') LIKE '%{filtro}%'";
-                        break;
-                    case "Paciente":
-                        filtroExpresion = $"LOWER(NomPaciente) LIKE '%{filtro}%'";
-                        break;
-                    case "Medico":
-                        filtroExpresion = $"LOWER(NomMedico) LIKE '%{filtro}%'";
-                        break;
-                }
+            string criterio = cmbFiltro.SelectedItem?.ToString();
+            string filtroExpresion = "";
 
-                (dgv_citas.DataSource as DataTable).DefaultView.RowFilter = filtroExpresion;
+            switch (criterio)
+            {
+                case "Fecha":
+                    filtroExpresion = $"CONVERT(fechaCita, System.String) LIKE '%{filtro}%'";
+                    break;
+                case "Paciente":
+                    filtroExpresion = $"NomPaciente LIKE '%{filtro}%'";
+                    break;
+                case "Medico":
+                    filtroExpresion = $"NomMedico LIKE '%{filtro}%'";
+                    break;
+                default:
+                    filtroExpresion = "";
+                    break;
+            }
+
+            try
+            {
+                dt.DefaultView.RowFilter = filtroExpresion;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al filtrar: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
 
         private void Listado_citas(string cTexto)
         {
@@ -267,7 +285,7 @@ namespace CRUD_Proyecto
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void dtpCita_ValueChanged(object sender, EventArgs e)
@@ -393,7 +411,6 @@ namespace CRUD_Proyecto
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            FiltrarCitas();
         }
 
         private void dgv_citas_CellClick(object sender, DataGridViewCellEventArgs e)
