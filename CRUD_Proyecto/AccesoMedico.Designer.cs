@@ -208,7 +208,51 @@
             this.btn_Nuevo.Text = "Nuevo";
             this.btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Nuevo.UseVisualStyleBackColor = false;
+
             this.btn_Nuevo.Click += new System.EventHandler(this.btn_Nuevo_Click);
+
+
+            // 
+            // btn_guardar
+            // 
+            this.btn_guardar.BackColor = System.Drawing.Color.DarkCyan;
+            this.btn_guardar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_guardar.ForeColor = System.Drawing.Color.White;
+            this.btn_guardar.Location = new System.Drawing.Point(252, 607);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_guardar.Name = "btn_guardar";
+            this.btn_guardar.Size = new System.Drawing.Size(113, 48);
+            this.btn_guardar.TabIndex = 69;
+            this.btn_guardar.Text = "Guardar";
+            this.btn_guardar.UseVisualStyleBackColor = false;
+            this.btn_guardar.Visible = false;
+            // 
+            // btn_cancelar
+            // 
+            this.btn_cancelar.BackColor = System.Drawing.Color.Firebrick;
+            this.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancelar.ForeColor = System.Drawing.Color.White;
+            this.btn_cancelar.Location = new System.Drawing.Point(88, 614);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(104, 42);
+            this.btn_cancelar.TabIndex = 68;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.UseVisualStyleBackColor = false;
+            this.btn_cancelar.Visible = false;
+            // 
+            // TxtTelefono
+            // 
+            this.TxtTelefono.Enabled = false;
+            this.TxtTelefono.Location = new System.Drawing.Point(200, 401);
+            this.TxtTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.ReadOnly = true;
+            this.TxtTelefono.Size = new System.Drawing.Size(193, 22);
+            this.TxtTelefono.TabIndex = 67;
+
             // 
             // label4
             // 
