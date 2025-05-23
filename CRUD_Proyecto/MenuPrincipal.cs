@@ -37,7 +37,9 @@ namespace CRUD_Proyecto
 
         private void EntrarAdministracion_Click(object sender, EventArgs e)
         {
-
+            Administracion admin = new Administracion();
+            this.Hide();
+            admin.Show();
         }
 
         private void lb_Tipo_Click(object sender, EventArgs e)
