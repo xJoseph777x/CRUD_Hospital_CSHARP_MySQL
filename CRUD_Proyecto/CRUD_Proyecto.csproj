@@ -111,6 +111,7 @@
       <DependentUpon>Administracion.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Dgv_Admin.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
