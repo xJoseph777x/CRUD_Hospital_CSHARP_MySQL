@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioMasculino = new System.Windows.Forms.RadioButton();
             this.radioFemenino = new System.Windows.Forms.RadioButton();
@@ -51,6 +51,10 @@
             this.TxtDireccion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnConsulta = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtBoxOb = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).BeginInit();
             this.SuspendLayout();
@@ -126,7 +130,7 @@
             // 
             this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(996, 249);
+            this.btnBuscar.Location = new System.Drawing.Point(880, 249);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 28);
@@ -136,7 +140,7 @@
             // 
             // Txt_Buscar
             // 
-            this.Txt_Buscar.Location = new System.Drawing.Point(645, 252);
+            this.Txt_Buscar.Location = new System.Drawing.Point(529, 252);
             this.Txt_Buscar.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_Buscar.Name = "Txt_Buscar";
             this.Txt_Buscar.Size = new System.Drawing.Size(341, 22);
@@ -208,25 +212,7 @@
             this.btn_Nuevo.Text = "Nuevo";
             this.btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Nuevo.UseVisualStyleBackColor = false;
-
             this.btn_Nuevo.Click += new System.EventHandler(this.btn_Nuevo_Click);
-
-
-            // 
-            // btn_guardar
-            // 
-           
-            // 
-            // TxtTelefono
-            // 
-            this.TxtTelefono.Enabled = false;
-            this.TxtTelefono.Location = new System.Drawing.Point(200, 401);
-            this.TxtTelefono.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtTelefono.Name = "TxtTelefono";
-            this.TxtTelefono.ReadOnly = true;
-            this.TxtTelefono.Size = new System.Drawing.Size(193, 22);
-            this.TxtTelefono.TabIndex = 67;
-
             // 
             // label4
             // 
@@ -253,8 +239,8 @@
             this.dgvPacientes.AllowUserToAddRows = false;
             this.dgvPacientes.AllowUserToDeleteRows = false;
             this.dgvPacientes.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvPacientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvPacientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPacientes.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvPacientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -286,9 +272,11 @@
             // 
             // TxtTelefono
             // 
+            this.TxtTelefono.Enabled = false;
             this.TxtTelefono.Location = new System.Drawing.Point(180, 390);
             this.TxtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.ReadOnly = true;
             this.TxtTelefono.Size = new System.Drawing.Size(291, 22);
             this.TxtTelefono.TabIndex = 83;
             // 
@@ -333,11 +321,44 @@
             this.label5.TabIndex = 87;
             this.label5.Text = "DATOS DEL PACIENTE";
             // 
+            // btnConsulta
+            // 
+            this.btnConsulta.AutoSize = true;
+            this.btnConsulta.Location = new System.Drawing.Point(989, 249);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Size = new System.Drawing.Size(170, 26);
+            this.btnConsulta.TabIndex = 88;
+            this.btnConsulta.Text = "Consultar historial medico";
+            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Click += new System.EventHandler(this.BtnConsulta_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(77, 599);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(102, 16);
+            this.label6.TabIndex = 89;
+            this.label6.Text = "Observaciones:";
+            // 
+            // txtBoxOb
+            // 
+            this.txtBoxOb.Location = new System.Drawing.Point(188, 599);
+            this.txtBoxOb.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBoxOb.Multiline = true;
+            this.txtBoxOb.Name = "txtBoxOb";
+            this.txtBoxOb.Size = new System.Drawing.Size(300, 100);
+            this.txtBoxOb.TabIndex = 90;
+            this.txtBoxOb.TextChanged += new System.EventHandler(this.TxtBoxObs_TextChanged_4);
+            // 
             // AccesoMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1213, 703);
+            this.Controls.Add(this.txtBoxOb);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TxtDireccion);
@@ -392,5 +413,9 @@
         private System.Windows.Forms.TextBox TxtDireccion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnConsulta;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtBoxOb;
     }
 }

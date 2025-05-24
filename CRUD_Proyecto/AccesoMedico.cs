@@ -405,5 +405,16 @@ namespace CRUD_Proyecto
             }
         }
 
+        private void BtnConsulta_Click(object sender, EventArgs e)
+        {
+            HistorialMedico historial = new HistorialMedico();
+            historial.Show();
+            this.Close();
+        }
+
+        private void TxtBoxObs_TextChanged_4(object sender, EventArgs e)
+        {
+
+        }
     }
 }
