@@ -122,6 +122,13 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="ConexionRecepcionista.cs" />
     <Compile Include="Dgv_Admin.cs" />
+    <Compile Include="Dgv_Citas.cs" />
+    <Compile Include="Diagnosticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosticos.Designer.cs">
+      <DependentUpon>Diagnosticos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administracion.resx">
       <DependentUpon>Administracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosticos.resx">
+      <DependentUpon>Diagnosticos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
