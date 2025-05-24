@@ -45,5 +45,12 @@ namespace CRUD_Proyecto
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MenuPrincipal menu = new MenuPrincipal(1);
+            this.Hide();
+            menu.Show();
+        }
     }
 }
