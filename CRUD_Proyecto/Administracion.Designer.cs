@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.Txt_Buscar = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -109,10 +109,11 @@
             this.BtnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.ImageKey = "1486564399-close_81512.png";
-            this.BtnSalir.Location = new System.Drawing.Point(605, 22);
+            this.BtnSalir.Location = new System.Drawing.Point(660, 35);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(114, 93);
+            this.BtnSalir.Size = new System.Drawing.Size(114, 64);
             this.BtnSalir.TabIndex = 46;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -125,10 +126,11 @@
             this.BtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEliminar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminar.ImageKey = "business_deletethedatabase_exit_db_delete_busines_2346.png";
-            this.BtnEliminar.Location = new System.Drawing.Point(462, 22);
+            this.BtnEliminar.Location = new System.Drawing.Point(517, 35);
             this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(114, 93);
+            this.BtnEliminar.Size = new System.Drawing.Size(114, 64);
             this.BtnEliminar.TabIndex = 44;
             this.BtnEliminar.Text = "eliminar";
             this.BtnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -141,10 +143,11 @@
             this.BtnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnActualizar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnActualizar.ImageKey = "Exit-Page_icon-icons.com_53732.png";
-            this.BtnActualizar.Location = new System.Drawing.Point(318, 22);
+            this.BtnActualizar.Location = new System.Drawing.Point(373, 35);
             this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(114, 93);
+            this.BtnActualizar.Size = new System.Drawing.Size(114, 64);
             this.BtnActualizar.TabIndex = 43;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -157,10 +160,11 @@
             this.btn_Nuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Nuevo.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Nuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Nuevo.ImageKey = "nuevo.png";
-            this.btn_Nuevo.Location = new System.Drawing.Point(184, 22);
+            this.btn_Nuevo.Location = new System.Drawing.Point(239, 35);
             this.btn_Nuevo.Name = "btn_Nuevo";
-            this.btn_Nuevo.Size = new System.Drawing.Size(114, 93);
+            this.btn_Nuevo.Size = new System.Drawing.Size(114, 64);
             this.btn_Nuevo.TabIndex = 42;
             this.btn_Nuevo.Text = "Nuevo";
             this.btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -259,8 +263,8 @@
             this.dgv_Medicos.AllowUserToAddRows = false;
             this.dgv_Medicos.AllowUserToDeleteRows = false;
             this.dgv_Medicos.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgv_Medicos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgv_Medicos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Medicos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgv_Medicos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_Medicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -441,8 +445,8 @@
             this.dgvUsuarios.AllowUserToAddRows = false;
             this.dgvUsuarios.AllowUserToDeleteRows = false;
             this.dgvUsuarios.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvUsuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvUsuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUsuarios.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvUsuarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -516,6 +520,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(913, 568);
             this.Controls.Add(this.lbrespuesta);
             this.Controls.Add(this.txtDireccion);
