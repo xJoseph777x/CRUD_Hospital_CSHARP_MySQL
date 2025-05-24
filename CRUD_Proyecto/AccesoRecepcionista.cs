@@ -14,9 +14,12 @@ namespace CRUD_Proyecto
 {
     public partial class AccesoRecepcionista : Form
     {
-        public AccesoRecepcionista()
+        private int tipoUsuario;
+
+        public AccesoRecepcionista(int tipo)
         {
             InitializeComponent();
+            tipoUsuario = tipo;
         }
 
         int idCitaSeleccionada = 0;
@@ -173,9 +176,6 @@ namespace CRUD_Proyecto
         }
         #endregion
 
-
-
-
         private void AccesoRecepcionista_Load(object sender, EventArgs e)
         {
             cmbFiltro.Items.Add("Fecha");
@@ -273,10 +273,7 @@ namespace CRUD_Proyecto
                     MessageBox.Show(Rpta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        }
-
-       
-        
+        }     
 
         private void Btn_Reporte_Click(object sender, EventArgs e)
         {
@@ -285,7 +282,9 @@ namespace CRUD_Proyecto
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
+            MenuPrincipal menuPrincipal = new MenuPrincipal(tipoUsuario);
             this.Close();
+            menuPrincipal.Show();
         }
 
         private void dtpCita_ValueChanged(object sender, EventArgs e)
@@ -317,7 +316,6 @@ namespace CRUD_Proyecto
         {
 
         }
-
         private void Btn_guardar_Click(object sender, EventArgs e)
         {
             try

@@ -14,9 +14,13 @@ namespace CRUD_Proyecto
 {
     public partial class HistorialMedico : Form
     {
-        public HistorialMedico()
+
+        private int tipoUsuario;
+
+        public HistorialMedico(int tipo)
         {
             InitializeComponent();
+            tipoUsuario = tipo;
             this.Load += HistorialMedico_Load;
         }
 
@@ -60,7 +64,6 @@ namespace CRUD_Proyecto
                 MessageBox.Show("Error al conectar con la base de datos: " + ex.Message);
             }
         }
-
 
         private void dgv_pacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -144,6 +147,13 @@ namespace CRUD_Proyecto
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             PacienteEntry.Text = dateTimePicker1.Value.ToString("dd/MM/yyyy");
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menuPrincipal = new MenuPrincipal(tipoUsuario);
+            menuPrincipal.Show();
+            this.Close();
         }
     }
 }
