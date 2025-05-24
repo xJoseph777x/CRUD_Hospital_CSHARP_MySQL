@@ -14,9 +14,14 @@ namespace CRUD_Proyecto
 {
     public partial class AccesoMedico : Form
     {
-        public AccesoMedico()
+
+
+        private int tipoUsuario;
+
+        public AccesoMedico(int tipo)
         {
             InitializeComponent();
+            tipoUsuario = tipo;
         }
 
         private void AccesoMedico_Load(object sender, EventArgs e)
@@ -334,6 +339,8 @@ namespace CRUD_Proyecto
 
         private void BtnSalir_Click_1(object sender, EventArgs e)
         {
+            MenuPrincipal admin = new MenuPrincipal(tipoUsuario);
+            admin.Show();
             this.Hide();
         }
 

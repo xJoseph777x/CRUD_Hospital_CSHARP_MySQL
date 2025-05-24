@@ -26,13 +26,24 @@ namespace CRUD_Proyecto
             {
                 lb_Tipo.Text = "Administrador";
                 btnEntrarAdministracion.Visible = true;
-            }  
+                BtnEntrarAccesoMedico.Visible = true;
+                BtnReccepcionista.Visible = true;
+                btnHisotirialMedico.Visible=true;
+                btnDiagnostico.Visible = true;
+            }
             else if (tipoUsuario == 2)
+            {
                 lb_Tipo.Text = "Médico";
+                BtnEntrarAccesoMedico.Visible = true;
+                btnHisotirialMedico.Visible = true;
+                btnDiagnostico.Visible = true;
+            }
             else if (tipoUsuario == 3)
+            {
                 lb_Tipo.Text = "Recepcionista";
-
-            
+                BtnReccepcionista.Visible = true;
+                btnHisotirialMedico.Visible = true;
+            }
         }
 
         private void EntrarAdministracion_Click(object sender, EventArgs e)
@@ -45,6 +56,39 @@ namespace CRUD_Proyecto
         private void lb_Tipo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AccesoMedico accesoMedico = new AccesoMedico(tipoUsuario);
+            accesoMedico.Show();
+            this.Hide();
+        }
+
+        private void BtnReccepcionista_Click(object sender, EventArgs e)
+        {
+            AccesoRecepcionista Recepcionista = new AccesoRecepcionista(tipoUsuario);
+            Recepcionista.Show();
+            this.Hide();
+        }
+
+        private void btnHisotirialMedico_Click(object sender, EventArgs e)
+        {
+            HistorialMedico historialMedico = new HistorialMedico(tipoUsuario);
+            historialMedico.Show();
+            this.Hide();
+        }
+
+        private void btnDiagnostico_Click(object sender, EventArgs e)
+        {
+            Diagnosticos diagnosticos = new Diagnosticos(tipoUsuario);
+            diagnosticos.Show();
+            this.Hide();
+        }
+
+        private void cerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
